@@ -6,7 +6,7 @@
 <script>
 $(document).ready(function() {
     $.getJSON("/api/v1.0/trucks", function(data) {
-    for (var i = 0; i < data.trucks; i++) {
+    for (var i = 0; i < trucks; i++) {
       $('.body').append($('<span class="fa fa-truck"></span>'));
     });
     $("#trucks").html();
