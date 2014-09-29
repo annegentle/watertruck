@@ -28,5 +28,5 @@ def get_trucks():
 
 
 if __name__ == "__main__":
-    service.run(debug=os.getenv("DEBUG", False))
+    service.run(debug=os.getenv("DEBUG", True))
 
