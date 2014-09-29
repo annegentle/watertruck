@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>watertruck.net</title>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $.getJSON("/api/v1.0/trucks", function(data) {
+    for (var i = 0; i < data.trucks; i++) {
+      $('.body').append($('<span class="fa fa-truck"></span>'));
+    });
+    $("#trucks").html();
+});
+</script>
+</head>
+<body>
+<p class="big">How many trucks will you deploy for water?</p>
+<p>truck counting as a service: <a href="/api/v1.0/trucks">/api/v1.0/trucks</a></p>
+<p>Clone and try for yourself at <a href="http://github.com/annegentle/watertruck">http://github.com/annegentle/watertruck</a></p>
+</body>
+</html>
