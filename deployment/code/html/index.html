@@ -6,13 +6,6 @@
 <script>
 $(document).ready(function() {
     $.getJSON("/api/v1.0/trucks", function(data) {
-        $("body").append("<h1>" + data.trucks_number + "</h1>");
-    });
-});
-</script>
-<script>
-$(document).ready(function() {
-    $.getJSON("/api/v1.0/trucks", function(data) {
     var i = 0;
     while ( i < data.trucks_number) {
         $("body").append('<span class="fa fa-truck fa-2x"></span>');
