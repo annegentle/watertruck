@@ -12,10 +12,10 @@ $(document).ready(function() {
 </script>
 <script>
 $(document).ready(function() {
-    $.getJSON("/api/v1.0/trucks", function(data) {    
+    $.getJSON("/api/v1.0/trucks", function(data) {
     var i = 0;
     while ( i < data.trucks_number) {
-        $("body").append('<span class="fa fa-truck fa-5x"></span>');
+        $("body").append('<span class="fa fa-truck fa-2x"></span>');
         i++;
         }
     });
@@ -23,9 +23,9 @@ $(document).ready(function() {
 </script>
 <style>
 body {
-font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-se$
+font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
-line-height: 1.42857143;
+line-height: 1.4;
 color: #333333;
 background-color: #ffffff;
 }
@@ -33,7 +33,7 @@ background-color: #ffffff;
 </head>
 <body>
 <p>How many trucks will you deploy for water?</p>
-<p>Trucks as a service: <a href="/api/v1.0/trucks">/api/v1.0/trucks</a></p>
+<p>Trucks as a Service: <a href="/api/v1.0/trucks">/api/v1.0/trucks</a></p>
 <p>Clone and try for yourself at <a href="http://github.com/annegentle/watertruck">http://github.com/annegentle/watertruck</a></p>
 </body>
 </html>
