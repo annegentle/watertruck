@@ -13,7 +13,7 @@ The deactivate command returns you to your "normal" environment.
 
 Now clone the humanitarian workshop repo to get the libcloud deployment code:
 
-    git clone http://github.com/rackerlabs/humanitarian-workshop
+    git clone http://github.com/rackerlabs/humanitarian-openstack
 
 Run the libcloud code itself to deploy to the Rackspace Cloud with credentials provided in a libcloud.conf file copied from the template:
 
